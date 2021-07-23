@@ -19,7 +19,7 @@
 
 	<PropertyGroup Condition="'$(Configuration)'=='Release'">
 		<WasmShellMonoRuntimeExecutionMode>InterpreterAndAOT</WasmShellMonoRuntimeExecutionMode>
-		<WasmShellEmccLinkOptimizationLevel>None</WasmShellEmccLinkOptimizationLevel>
+		<WasmShellEmccLinkOptimizationLevel>-O3 -flto=thin</WasmShellEmccLinkOptimizationLevel>
 		<WasmShellEnableEmccProfiling>true</WasmShellEnableEmccProfiling>
 		<!--<WasmShellGenerateAOTProfile>true</WasmShellGenerateAOTProfile>-->
 	</PropertyGroup>
